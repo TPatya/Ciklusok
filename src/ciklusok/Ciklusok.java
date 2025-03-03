@@ -121,8 +121,41 @@ public class Ciklusok {
         }
         System.out.println(osszeg);
                 
-            
         
+        int db = 0;
+        for(int i = 0; i > szamok.size(); i++){
+            if(szamok.get(i) == 10);    
+            db++;
+        }
+        System.out.println(db);
+        
+        
+        int min = szamok.get(0);
+        for(int i = 0; i < szamok.size(); i++){
+            if(min > szamok.get(i)){
+                min = szamok.get(i);
+            }
+        }
+        System.out.println(min);
+        
+        
+        int max = szamok.get(0);
+        for(int i = 0; i < szamok.size(); i++){
+               if(max < szamok.get(i)){
+                   max = szamok.get(i);
+               }
+        }
+        System.out.println(max);
+        
+        //van e páros szám a listában
+        boolean van = false;
+        for(int i = 0; i < szamok.size(); i++){
+            if(szamok.get(i) % 2 == 0){
+                van = true;
+                break;
+            }
+        }
+        System.out.println(van);
     }
     
 }
