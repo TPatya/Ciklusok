@@ -100,6 +100,29 @@ public class Ciklusok {
             System.out.println("Kérek egy számot");
             num2 = be.nextInt();
         }while(num2 != 0);
+        
+        
+        System.out.println("Adj meg egy számot");
+        Scanner n = new Scanner(System.in);
+        int nn = n.nextInt();
+        
+        for(int i = 0; i < nn; i++){
+            System.out.println(i+10);
+        }
+        
+        List<Integer> szamok = List.of(1,2,3,4,5,12,-25);
+        
+        //Summa
+        
+        int osszeg = 0;
+        
+        for(int i = 0; i < szamok.size(); i++){
+            osszeg = osszeg + szamok.get(i);
+        }
+        System.out.println(osszeg);
+                
+            
+        
     }
     
 }
